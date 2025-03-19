@@ -134,10 +134,20 @@ header {
 .circle2 {
     background-color: rgb(235, 235, 235);
     border: 2px solid rgb(235, 235, 235);
-    margin: 20px 170px;
+    margin: 20px 185px;
     padding: 5px 0;
     border-radius: 20px;
 
+}
+
+@media screen and (max-width: 1200px) {
+    .circle {
+        margin: 10px 90px;
+    }
+    .circle2 {
+        margin: 10px 170px;
+    }
+    
 }
 
 
@@ -175,8 +185,8 @@ header {
         }
     }
     h2 {
-        white-space: nowrap;
-        display: inline; 
+        white-space: normal;
+        display: block; 
         text-align: center;
     }
     .Per1{
@@ -236,12 +246,16 @@ header {
     }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (min-width: 576px) {
     .circle {
         margin: 10px 190px;
     }
     .circle2 {
         margin: 10px 190px;
     }
-    
+    h2 {
+        white-space: normal;
+        display: block; 
+        text-align: center;
+    }
 }

@@ -1,7 +1,7 @@
 :root {
     --primary-color :#252422; 
     --secondary-color :#FFFCF2; 
-    --button-color :#95ff00; 
+    --button-color :#96f004; 
     --background-color :#CCC5B9; 
     --font-color :#403D39; 
     --base-white-color :#ffffff; 
@@ -134,10 +134,17 @@ header {
 .circle2 {
     background-color: rgb(235, 235, 235);
     border: 2px solid rgb(235, 235, 235);
-    margin: 20px 185px;
+    margin: 20px 200px;
     padding: 5px 0;
     border-radius: 20px;
 
+}
+.full-screen-menu {
+    display: none;
+}
+
+.hamburger-icon {
+    display: none;
 }
 
 @media screen and (max-width: 1200px) {
@@ -145,9 +152,11 @@ header {
         margin: 10px 90px;
     }
     .circle2 {
-        margin: 10px 170px;
+        margin: 10px 180px;
     }
-    
+    .hamburger-icon {
+        display: none;
+    }
 }
 
 
@@ -216,6 +225,7 @@ header {
         margin: 0 auto;
         margin-top: 20px;
         text-align: center; 
+        
     }
 }
 
@@ -246,7 +256,78 @@ header {
     }
 }
 
+@media screen and (max-width: 576px) {
+    nav {
+        display: none;
+    }
+    .logo {
+        margin-top: 20px;
+
+    }
+    .hamburger-icon {
+        display:block;
+        font-size: 2rem;
+        cursor: pointer;
+        color: white;
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        
+    }
+    button {
+        margin-bottom: 30px;
+    }
+    .full-screen-menu {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.9); /* พื้นหลังสีดำโปร่งแสง */
+        color: white;
+        text-align: center;
+        padding-top: 50px;
+        z-index: 999;
+    }
+
+    .full-screen-menu ul {
+        list-style: none;
+        padding-top: 50px;
+    }
+
+    .full-screen-menu ul li {
+        margin: 20px 0;
+    }
+
+    .full-screen-menu ul li a {
+        font-size: 20px;
+        color: white;
+        text-decoration: none;
+    }
+
+    .full-screen-menu ul li a:hover {
+        color: var(--secondary-color);
+    }
+
+    /* ปุ่มปิดเมนู */
+    .close-btn {
+        font-size: 32px;
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        cursor: pointer;
+        color: rgb(255, 255, 255);
+    }
+    .button1 {
+        display: none;
+    }
+
+    
+}
+
 @media screen and (min-width: 576px) {
+    
     .circle {
         margin: 10px 190px;
     }
@@ -258,4 +339,8 @@ header {
         display: block; 
         text-align: center;
     }
+
+    
+    
+
 }

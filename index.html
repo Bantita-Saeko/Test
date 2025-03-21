@@ -30,19 +30,41 @@
                 </a>
               </div>
         
-              <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 fs-5">
-                <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
-                <li><a href="#About" class="nav-link px-2">About</a></li>
-                <li><a href="#Performance" class="nav-link px-2">Perfomance</a></li>
-                <li><a href="#Contact" class="nav-link px-2">Contact</a></li>
-              </ul>
+              <nav>
+                <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 fs-5">
+                  <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
+                  <li><a href="#About" class="nav-link px-2">About</a></li>
+                  <li><a href="#Performance" class="nav-link px-2">Perfomance</a></li>
+                  <li><a href="#Contact" class="nav-link px-2">Contact</a></li>
+                </ul>
+              </nav>
+              
         
               <div class="button1 col-md-3 text-end">
                 <button type="button" class="btn btn-primary"><a href="file/Portfolio.pdf" download="Portfolio">Download Portfolio</a></button>
               </div>
+
+              <!-- Hamburger Menu -->
+             <div class="hamburger-icon" onclick="openMenu()">&#9776;</div>
+
+              
+      
             </header>
           </div>
+          <!-- Full-Screen Menu -->
+          <div class="full-screen-menu" id="fullScreenMenu">
+            <div class="close-btn" onclick="closeMenu()">✖</div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Performance">Perfomance</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <li><a href="file/Portfolio.pdf" download="Portfolio"><span style="color: #95ff00;">Download Portfolio</span></a></li>
+        
+            </ul>
+        </div>
     </header>
+
 
     <!-- About -->
     <div class="container col-xxl-8 px-4 py-5">
@@ -52,7 +74,7 @@
           </div>
           <div class="text col-lg-6">
             <h3 class="display-6 fw-bold text-body-emphasis lh-1 mb-3">Hi, I'm a student</h3>
-            <h1 class="display-5 fw-bold text- lh-1 mb-3" style="color: #95ff00; text-shadow: 2px 2px 2px gray;">Bantita Saeko</h1>
+            <h1 class="display-5 fw-bold text- lh-1 mb-3" style="color: #96f004; text-shadow: 2px 2px 2px gray;">Bantita Saeko</h1>
             <p class="lead">Hello, my name is Bantita Saeko, but you can call me Ink. I am a student in the Information Technology department at Nakhon Pathom Rajabhat University. This website serves as a portfolio to showcase my projects and achievements throughout my academic journey.</p>
             <div class="contact-main">
                 <div class="circle">
@@ -81,7 +103,7 @@
         <div class="row g-4">
           <div class="Card1 gap-4 col-12 col-sm-6 col-lg-4">
             <div class="card align-items-center justify-content-center">
-              <div class="circle text-center">
+              <div class="circle text-center p-1">
                 <img src="img/HTML.png" class="logo-size card-img-top " alt="...">
               </div>
               <div class="card-body">
@@ -94,7 +116,7 @@
           <!-- Card 2 -->
           <div class="Card2 gap-4 col-12 col-sm-6 col-lg-4">
             <div class="card align-items-center justify-content-center">
-              <div class="circle text-center">
+              <div class="circle text-center p-1">
                 <img src="img/CSS.png" class="logo-size card-img-top" alt="..." width="70px">
               </div>
               <div class="card-body">
@@ -107,7 +129,7 @@
           <!-- Card 3 -->
           <div class="Card3 gap-4 col-12 col-sm-6 col-lg-4">
             <div class="card align-items-center justify-content-center">
-              <div class="circle text-center ">
+              <div class="circle text-center p-1">
                 <img src="img/JS.png" class="logo-size card-img-top" alt="...">
               </div>
               <div class="card-body">
@@ -119,7 +141,7 @@
           <!-- End Card4 -->
           <div class="Card4 gap-4 col-12 col-sm-6 col-lg-4">
             <div class="card align-items-center justify-content-center">
-              <div class="circle text-center">
+              <div class="circle text-center p-1">
                 <img src="img/Java.png" class="logo-size card-img-top" alt="...">
               </div>
               <div class="card-body">
@@ -132,7 +154,7 @@
           <!-- Card 5 -->
           <div class="Card5 gap-4 col-12 col-sm-6 col-lg-4">
             <div class="card align-items-center justify-content-center">
-              <div class="circle text-center">
+              <div class="circle text-center p-1">
                 <img src="img/actionscript.png" class="logo-size card-img-top" alt="...">
               </div>
               <div class="card-body">
@@ -145,7 +167,7 @@
           <!-- Card 6 -->
           <div class="Card6 gap-4 col-12 col-sm-6 col-lg-4">
             <div class="card align-items-center justify-content-center">
-              <div class="circle text-center">
+              <div class="circle text-center p-1">
                 <img src="img/Boostrap.png" class="logo-size card-img-top" alt="...">
               </div>
               <div class="card-body">
@@ -165,7 +187,7 @@
         <div class="row g-4">
           <div class="Card1 gap-4 my-4 col-12 col-sm-12 col-md-6">
             <div class="card m-auto align-items-center justify-content-center">
-              <div class="circle2 text-center">
+              <div class="circle2 text-center p-2">
                 <img src="img/VScode.png" class="logo-size card-img-top " alt="...">
               </div>
               <div class="card-body">
@@ -178,7 +200,7 @@
           <!-- Card 2 -->
           <div class="Card2 gap-4 my-4 col-12 col-sm-12 col-md-6">
             <div class="card m-auto align-items-center justify-content-center">
-              <div class="circle2 text-center">
+              <div class="circle2 text-center p-2">
                 <img src="img/Adobe Flash.png" class="logo-size card-img-top" alt="..." width="70px">
               </div>
               <div class="card-body ">
@@ -191,7 +213,7 @@
           <!-- Card 3 -->
           <div class="Card3 gap-4 my-4 col-12 col-sm-12 col-md-6">
             <div class="card m-auto align-items-center justify-content-center">
-              <div class="circle2 text-center">
+              <div class="circle2 text-center p-2">
                 <img src="img/Figma1.png" class="logo-size card-img-top " alt="..." width="">
               </div>
               <div class="card-body">
@@ -204,7 +226,7 @@
           <!-- Card 4 -->
           <div class="Card4 gap-4 my-4 col-12 col-sm-12 col-md-6">
             <div class="card m-auto align-items-center justify-content-center">
-              <div class="circle2 text-center">
+              <div class="circle2 text-center p-2">
                 <img src="img/Procreate.png" class="logo-size card-img-top" alt="..." width="70px">
               </div>
               <div class="card-body">
@@ -341,6 +363,18 @@
     <!-- SweetAlert2 -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
+    <!-- Code Hamburger -->
+    <script>
+      function openMenu() {
+            document.getElementById("fullScreenMenu").style.display = "block";
+        }
+       
+        function closeMenu() {
+            document.getElementById("fullScreenMenu").style.display = "none";
+        }
+      
+  </script>
+
     <!-- Code Script -->
     <script>
       //โค้ดนี้ใช้ JavaScript เพื่อเลือกทุกองค์ประกอบ <img> ที่มี class="clickable-image" [จะเลือก ทั้ง 3 รูป] และเพิ่ม Event Listener ให้กับแต่ละรูปภาพ เพื่อให้สามารถคลิกแล้วเกิด popup (SweetAlert2) แสดงรูปขยายได้
@@ -357,12 +391,11 @@
                   //showCloseButton: true,
                   confirmButtonText: 'Close',
                   confirmButtonColor: 'Black' , 
-                  // showConfirmButton : true
+                  // showConfirmButton : true,
               });
           });
       });
   </script>
+  
 </body>
 </html>
-
-<!-- Figma, Procreate, Adobe Flash,VScode ,   -->
